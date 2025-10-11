@@ -1,9 +1,10 @@
-/*--root serve para defenir variaveis globais detro do codigo--*/
+/*--root serve para defenir variaveis globais denstro do codigo--*/
 :root {
     --cor-de-fundo: #0B0A14;
     --branco-principal: #ffffff;
     --botao-azul: #167bf7;
     --cinza-segundario: #c0c0c0;
+    --FONTE-PRINCIPAL: "INTER";
 }
 
 /*-- * serve para definir toda a pagina--*/
@@ -15,6 +16,9 @@
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
+    font-family: var(--FONTE-PRINCIPAL);
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .principal {
@@ -29,4 +33,52 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     height: 100vh;
+}
+
+.container__caixa {
+    margin: 0 10rem;
+}
+
+.container__titulo {
+    font-size: 1.75rem;
+}
+
+.container__imagem {
+    margin: 1rem 0 2rem 0;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 0.5REM;
+    padding: 1rem;
+    color: var(--branco-principal);
+    text-decoration: none;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.container__botao--secundario {
+    background-color: transparent;
+    border: 2PX solid var(--branco-principal);
+
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.segundario__imagem {
+    width: 70%;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--branco-principal);
+    margin-bottom: 0.1rem;
+}
+
+.descricao__texto {
+    color: var(--cinza-segundario);
 }
